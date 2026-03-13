@@ -1,0 +1,20 @@
+[package]
+name = "peasy-video"
+version = "0.1.1"
+edition = "2021"
+authors = ["PeasyTools"]
+description = "Video processing library for Rust — trim, resize, rotate, extract audio, generate thumbnails, convert to GIF. FFmpeg-powered with safe Rust bindings via std::process."
+license = "MIT"
+repository = "https://github.com/peasytools/peasy-video-rs"
+homepage = "https://peasyvideo.com"
+documentation = "https://docs.rs/peasy-video"
+readme = "README.md"
+keywords = ["video", "ffmpeg", "mp4", "gif", "thumbnail"]
+categories = ["multimedia::video", "command-line-utilities"]
+
+exclude = ["target/", "demo.gif", "demo.tape"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
