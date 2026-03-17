@@ -1,7 +1,7 @@
-//! peasy-video — Video processing — trim, resize, thumbnails, GIF conversion.
-//!
-//! Video processing library for Rust — trim, resize, rotate, extract audio, generate thumbnails, convert to GIF.
+pub mod client;
+pub mod error;
+pub mod types;
 
-mod engine;
-
-pub use engine::*;
+pub use client::Client;
+pub use error::{PeasyError, Result};
+pub use types::*;

@@ -1,20 +1,24 @@
 [package]
 name = "peasy-video"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 authors = ["PeasyTools"]
-description = "Video processing library for Rust — trim, resize, rotate, extract audio, generate thumbnails, convert to GIF. FFmpeg-powered with safe Rust bindings via std::process."
+description = "Rust client for PeasyVideo — video tools, glossary, and guides API"
 license = "MIT"
 repository = "https://github.com/peasytools/peasy-video-rs"
 homepage = "https://peasyvideo.com"
 documentation = "https://docs.rs/peasy-video"
 readme = "README.md"
-keywords = ["video", "ffmpeg", "mp4", "gif", "thumbnail"]
-categories = ["multimedia::video", "command-line-utilities"]
-
+keywords = ["video", "peasy", "api-client", "tools"]
+categories = ["api-bindings"]
 exclude = ["target/", "demo.gif", "demo.tape"]
 
 [dependencies]
+reqwest = { version = "0.12", features = ["json"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 thiserror = "2"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
+wiremock = "0.6"
