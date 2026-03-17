@@ -3,6 +3,8 @@
 [![crates.io](https://img.shields.io/crates/v/peasy-video)](https://crates.io/crates/peasy-video)
 [![docs.rs](https://docs.rs/peasy-video/badge.svg)](https://docs.rs/peasy-video)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![crates.io](https://agentgif.com/badge/crates/peasy-video/version.svg)](https://crates.io/crates/peasy-video)
+[![GitHub stars](https://agentgif.com/badge/github/peasytools/peasy-video-rs/stars.svg)](https://github.com/peasytools/peasy-video-rs)
 
 Async Rust client for the [PeasyVideo](https://peasyvideo.com) API — calculate resolution, estimate bitrate, and analyze frame rates for video files. Built with reqwest, serde, and tokio.
 
